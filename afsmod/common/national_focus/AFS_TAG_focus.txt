@@ -29,9 +29,9 @@ focus_tree = {
 	### EXEMPLARY FOCUSES
 	focus = {
 		id = National_Awakening
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_focus_national_awakening
 		
-		x = 6
+		x = 10
 		y = 0
 		
 		cost = 5
@@ -53,7 +53,7 @@ focus_tree = {
 	
 	focus = {
 		id = Youre_Fired
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_focus_youre_fired
 		prerequisite = { focus = National_Awakening }
 		
 		x = 0
@@ -79,7 +79,7 @@ focus_tree = {
 	
 	focus = {
 		id = Think_of_Our_Future
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_focus_think_of_our_future
 		prerequisite = { focus = National_Awakening }
 		
 		x = 2
@@ -105,7 +105,7 @@ focus_tree = {
 	
 	focus = {
 		id = Remember_Our_Past
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_focus_remember_our_past
 		prerequisite = { focus = National_Awakening }
 		
 		x = -2
@@ -131,7 +131,7 @@ focus_tree = {
 	
 	focus = {
 		id = Political_Revolution
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_focus_polotical_revolution
 		prerequisite = { focus = Remember_Our_Past }
 		prerequisite = { focus = Youre_Fired }
 		prerequisite = { focus = Think_of_Our_Future }
@@ -141,6 +141,32 @@ focus_tree = {
 		relative_position_id = National_Awakening
 		
 		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = The_AFS_Generals_Coup
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Political_Revolution }
+		
+		x = 0
+		y = 3
+		relative_position_id = National_Awakening
+		
+		cost = 1.5
 
 		available = {
 			
