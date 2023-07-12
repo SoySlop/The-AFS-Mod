@@ -1,0 +1,159 @@
+### FOCUSES (See MODDING TUTORIAL video n. 2 "Focuses, Command & Scopes" on YouTube "Narzgel". If you need any advice, check the UMC Discord)
+# AFK = reserved space for the TAG of your nation
+
+##### FOCUS TREE
+# In this first part you only need to change "id" (to your unique ID of your FOCUS TREE) and "tag = " in the "modifier" part.
+focus_tree = {
+	# ID of the whole FOCUS TREE
+	id = AFS_custom_focus
+	
+	# If Generic nations (those without focus tree) will try to use this FOCUS TREE
+	default = no
+	
+	# How likely is country to use this FOCUS TREE
+	country = {
+		factor = 0
+		
+		# Adding TAG of the country you want (for example GER for Germany) will make that country to use this FOCUS TREE
+		modifier = {
+			add = 50
+			tag = AFS
+		}
+	}
+	
+	# CONTINUOUS FOCUS position (X = left / right, Y = up / down)
+	continuous_focus_position = { x = 25 y =1000 }	
+	
+	##### INDIVIDUAL FOCUSES
+	
+	### EXEMPLARY FOCUSES
+	focus = {
+		id = National_Awakening
+		icon = GFX_thisgfxiswrong
+		
+		x = 6
+		y = 0
+		
+		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Youre_Fired
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Awakening }
+		
+		x = 0
+		y = 1
+		relative_position_id = National_Awakening
+		
+		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Think_of_Our_Future
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Awakening }
+		
+		x = 2
+		y = 1
+		relative_position_id = National_Awakening
+		
+		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Remember_Our_Past
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = National_Awakening }
+		
+		x = -2
+		y = 1
+		relative_position_id = National_Awakening
+		
+		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = Political_Revolution
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = Remember_Our_Past }
+		prerequisite = { focus = Youre_Fired }
+		prerequisite = { focus = Think_of_Our_Future }
+		
+		x = 0
+		y = 2
+		relative_position_id = National_Awakening
+		
+		cost = 5
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
